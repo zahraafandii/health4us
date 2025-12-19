@@ -1,0 +1,153 @@
+.auth {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.auth-left {
+    flex: 0 0 37%;
+    overflow: hidden;
+}
+
+.auth-background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.auth-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+.auth-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: #2C5565;
+    margin-bottom: 18px;
+    white-space: nowrap;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.required {
+    color: #E24A4A;
+}
+
+.auth-box {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px 45px 14px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.auth-toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    transform: translateY(-50%);
+    transition: .2s;
+}
+
+.auth-toggle-password:hover {
+    opacity: 1;
+}
+
+.option {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.option a {
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.option a:hover {
+    color: #007bff;
+}
+
+.auth-btn {
+    width: 100%;
+    background: #295268;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-btn:hover {
+    background: #253f4c;
+}
+
+.auth-mascot{
+    position: relative;
+    right: -20px;
+    transform: translateY(280px);
+    width: 250px;
+}
+
+@media (max-width: 992px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .form-wrapper {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 576px) {
+    .right {
+        padding: 24px;
+    }
+
+    .title {
+        font-size: 32px;
+        white-space: normal;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+
+    .mascot {
+        display: none;
+    }
+}

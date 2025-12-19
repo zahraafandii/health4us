@@ -1,0 +1,21 @@
+.desc {
+    font-size: 15px;
+    margin-bottom: 24px;
+    color: #444;
+    white-space: nowrap;
+}
+
+.newpass-box {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    margin-right: 61px;
+}
+
+.newpass-box input {
+    width: 100%;
+    padding: 12px 45px 14px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
